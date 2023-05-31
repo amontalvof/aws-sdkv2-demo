@@ -4,7 +4,7 @@ const iam = new AWS.IAM();
 
 const params = {
     NewUserName: 'john',
-    UserName: 'newuser',
+    UserName: 'newUser',
 };
 
 iam.updateUser(params, function (err, data) {
