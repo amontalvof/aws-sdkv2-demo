@@ -14,7 +14,7 @@ const params = {
 
 docClient.get(params, function (err, data) {
     if (err) {
-        console.log('unable to get movie', err);
+        console.log(err);
     } else {
         console.log(data['Item']);
     }
