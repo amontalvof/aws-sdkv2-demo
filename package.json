@@ -11,7 +11,9 @@
     "author": "Andy Montalvo",
     "license": "ISC",
     "dependencies": {
-        "aws-sdk": "^2.1386.0"
+        "aws-sdk": "^2.1386.0",
+        "mysql": "^2.18.1",
+        "pg": "^8.11.0"
     },
     "devDependencies": {
         "eslint": "^8.41.0"
