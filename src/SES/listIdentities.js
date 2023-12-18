@@ -5,10 +5,10 @@ AWS.config.update({ region: 'us-east-2' });
 const ses = new AWS.SES();
 
 const params = {
-    EmailAddress: 'email@abc.com',
+    IdentityType: 'EmailAddress',
 };
 
-ses.verifyEmailAddress(params, function (err, data) {
+ses.listIdentities(params, function (err, data) {
     if (err) {
         console.log(err);
     } else {
